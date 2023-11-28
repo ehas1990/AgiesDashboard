@@ -49,12 +49,7 @@
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <!-- <li class="nav-item d-none d-sm-inline-block">
-        <a href="index.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li> -->
+     
     </ul>
 
     <!-- Right navbar links -->
@@ -385,10 +380,10 @@
           
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <!-- <ol class="breadcrumb float-sm-right">
+            <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Jobs</li>
-            </ol> -->
+            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -398,19 +393,19 @@
     <!-- Main content -->
     <section class="content">
                <div class="container">
-                      <div class="row justify-content-center">
-                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <div class="row">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
                                     <div class="card-header">
                                       <div class="container">
                                            <div class="row">
                                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                                                    <h3 class="card-title">District</h3>
+                                                    <h3 class="card-title">User Management</h3>
                                                 </div>
                                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                                                      <!-- Button trigger modal -->
                                                         <button type="button" class="btn btn-primary float-lg-right float-md-right" data-toggle="modal" data-target="#exampleModal">
-                                                            Add District
+                                                           Edit User
                                                         </button>
                                                         
                                                         <!-- Modal -->
@@ -419,28 +414,69 @@
                                                             <div class="modal-dialog" role="document">
                                                             <div class="modal-content modal-bg">
                                                                 <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">District Add</h5>
+                                                                <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
                                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                                     <span aria-hidden="true">&times;</span>
                                                                 </button>
                                                                 </div>
                                                                 <div class="modal-body" id="modal-broswer">
                                                                 
-                                                                
                                                                   <div class="row mt-4">
                                                                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                                                                          <input type="text" class=" form-control w-75" placeholder="Enter Disrict">
+                                                                          <input type="text" class=" form-control w-75" placeholder="Enter First Name">
                                                                     </div>
                                                                    
                                                                 </div>
-                                                       
-                                                         
+                                                                <div class="row mt-4">
+                                                                  
+                                                                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                    <input type="text" class=" form-control w-75" placeholder="Enter Last Name">
+                                                                  </div>
+                                                              </div>
+                                                              <div class="row mt-4">
+                                                                  
+                                                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                  <input type="email" class=" form-control w-75" placeholder="Enter E-mail">
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-4">
+                                                                  
+                                                              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                                                <input type="text" class=" form-control w-75" placeholder="Enter Contact Number">
+                                                              </div>
+                                                          </div>
+                                                        
+                                                          <div class="row mt-4">
+                                                            <div class="col-xxl-12 col-xl-12 col-md-12 col-sm-12 col-12">
+                                                              <!--  -->
+                                                              <div class="profile-pic-wrapper">
+                                                                <div class="pic-holder">
+                                                                  <!-- uploaded file shown here -->
+                                                                  <img class="pic hello-3" src="dist/img/upload.png">
+                                                              
+                                                                  <input class="uploadProfileInput hello-4" type="file" name="uploadedFile" id="newProfileFile" accept=".doc, .docx, .pdf, image/*" style="opacity: 0;" />
+                                                                  <label for="newProfileFile" class="upload-file-block" id="upload-file-sucess">
+                                                                    <div class="text-center">
+                                                                      <div class="mb-2">
+                                                                        <i class="fa fa-file fa-2x"></i>
+                                                                      </div>
+                                                                      <div class="text-uppercase">
+                                                                        Upload <br /> Resume
+                                                                      </div>
+                                                                    </div>
+                                                                  </label>
+                                                                </div>
+                                                              </div>
+                                                              <!--  -->
+                                                        </div>
+             
+                                                        </div>
                                                               
                                                                       
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                
-                                                                <input type="submit" class="btn btn-primary" value="Add">
+                                                                <input type="submit" class="btn btn-primary">
                                                                 </div>
                                                             </div>
                                                             </div>
@@ -454,43 +490,56 @@
                                     </div>
                                     <!-- /.card-header -->
                                     <div class="card-body">
-                                      <table id="example1" class="table table-bordered table-striped ">
+                                      <table id="example1" class="table table-bordered table-striped table-responsive-sm">
                                         <thead>
                                         <tr>
-                                          <th>District</th>
-                                          <th>status</th>
-                                     
+                                          <th>First Name</th>
+                                          <th>Last Name</th>
+                                          <th>Email</th>
+                                          <th>Contact Number</th>
+                                          <th>Resume</th>
+                                          <th>Edit</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                      
                                       
                                         <tr>
-                                          <td>Kerala</td>
+                                          <td>Midhun</td>
+                                          <td>Babu</td>
+                                          <td>midhunkb@gmail.com</td>
+                                          <td>9874851236</td>
+                                          <td>C</td>
                                           <td>
-                                              <ul class="status">
-                                                  <li><a href="editdistrict.html"><i class="fa fa-edit text-green"></i></a></li>
-                                                  <li><i class="fa fa-trash-alt text-danger"></i></li>
-                                              </ul>
-                                          </td>
-                                         
+                                            <ul class="status">
+                                                <li><a data-toggle="modal" data-target="#exampleModal"><i class="fa fa-edit text-green"></i></a></li>
+                                                <li><i class="fa fa-trash-alt text-danger"></i></li>
+                                            </ul>
+                                        </td>
                                         </tr>
                                         <tr>
-                                            <td>Tamilnadu</td>
+                                            <td>Sree</td>
+                                            <td>Hari</td>
+                                            <td>sreehari@gmail.com</td>
+                                            <td>9874851236</td>
+                                            <td>C</td>
                                             <td>
                                                 <ul class="status">
-                                                  <li><a href="editdistrict.html"><i class="fa fa-edit text-green"></i></a></li>
-                                                  <li><i class="fa fa-trash-alt text-danger"></i></li>
-                                              </ul>
+                                                    <li><a href="editdistrict.html"><i class="fa fa-edit text-green"></i></a></li>
+                                                    <li><i class="fa fa-trash-alt text-danger"></i></li>
+                                                </ul>
                                             </td>
-                                        
                                         </tr>
                                        
                                         </tbody>
                                         <tfoot>
                                             <tr>
-                                                <th>Job District</th>
-                                                <th>status</th>
+                                                <th>First Name</th>
+                                                <th>Last Name</th>
+                                                <th>Email</th>
+                                                <th>Contact Number</th>
+                                                <th>Resume</th>
+                                                <th>Edit</th>
                                               </tr>
                                         </tfoot>
                                       </table>
@@ -503,7 +552,6 @@
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
   <footer class="main-footer">
     <strong>Copyright © 2023-2024 <a href="https://a2zalphabetsolutionz.com/">A2Z AlphabetSolutionz PVT.LTD</a>.</strong>
     All rights reserved.
@@ -517,6 +565,7 @@
   <!-- /.control-sidebar -->
 </div>
 <!-- ./wrapper -->
+
 <!-- jQuery -->
 <script src="plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->
@@ -569,146 +618,71 @@
     });
   });
 </script>
+
 <script>
-  document.addEventListener("change", function (event) {
-  if (event.target.classList.contains("uploadProfileInput")) {
-    var triggerInput = event.target;
-    var currentImg = triggerInput.closest(".pic-holder").querySelector(".pic")
-      .src;
-    var holder = triggerInput.closest(".pic-holder");
-    var wrapper = triggerInput.closest(".profile-pic-wrapper");
-
-    var alerts = wrapper.querySelectorAll('[role="alert"]');
-    alerts.forEach(function (alert) {
-      alert.remove();
-    });
-
-    triggerInput.blur();
-    var files = triggerInput.files || [];
-    if (!files.length || !window.FileReader) {
-      return;
-    }
-
-    if (/^image/.test(files[0].type)) {
-      var reader = new FileReader();
-      reader.readAsDataURL(files[0]);
-
-      reader.onloadend = function () {
-        holder.classList.add("uploadInProgress");
-        holder.querySelector(".pic").src = this.result;
-
-        var loader = document.createElement("div");
-        loader.classList.add("upload-loader");
-        loader.innerHTML =
-          '<div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>';
-        holder.appendChild(loader);
-
-        setTimeout(function () {
-          holder.classList.remove("uploadInProgress");
-          loader.remove();
-
-          var random = Math.random();
-          if (random < 0.9) {
-            wrapper.innerHTML +=
-              '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully</div>';
-            triggerInput.value = "";
+    document.addEventListener("change", function (event) {
+      if (event.target.classList.contains("uploadProfileInput")) {
+        var triggerInput = event.target;
+        var holder = triggerInput.closest(".pic-holder");
+        var wrapper = triggerInput.closest(".profile-pic-wrapper");
+  
+        var alerts = wrapper.querySelectorAll('[role="alert"]');
+        alerts.forEach(function (alert) {
+          alert.remove();
+        });
+  
+        triggerInput.blur();
+        var files = triggerInput.files || [];
+  
+        if (files.length) {
+          var reader = new FileReader();
+          reader.readAsDataURL(files[0]);
+  
+          reader.onloadend = function () {
+            holder.classList.add("uploadInProgress");
+            holder.querySelector(".hello-3").src = this.result;
+  
+            var loader = document.createElement("div");
+            loader.classList.add("upload-loader");
+            loader.innerHTML =
+              '<div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>';
+            holder.appendChild(loader);
+  
             setTimeout(function () {
-              wrapper.querySelector('[role="alert"]').remove();
-            }, 3000);
-          } else {
-            holder.querySelector(".pic").src = currentImg;
-            wrapper.innerHTML +=
-              '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>';
-            triggerInput.value = "";
-            setTimeout(function () {
-              wrapper.querySelector('[role="alert"]').remove();
-            }, 3000);
-          }
-        }, 1500);
-      };
-    } else {
-      wrapper.innerHTML +=
-        '<div class="alert alert-danger d-inline-block p-2 small" role="alert">Please choose a valid image.</div>';
-      setTimeout(function () {
-        var invalidAlert = wrapper.querySelector('[role="alert"]');
-        if (invalidAlert) {
-          invalidAlert.remove();
+              holder.classList.remove("uploadInProgress");
+              loader.remove();
+  
+              var random = Math.random();
+              if (random < 0.9) {
+                wrapper.innerHTML +=
+                  '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> File uploaded successfully</div>';
+                triggerInput.value = "";
+                setTimeout(function () {
+                  wrapper.querySelector('[role="alert"]').remove();
+                }, 3000);
+              } else {
+                wrapper.innerHTML +=
+                  '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>';
+                triggerInput.value = "";
+                setTimeout(function () {
+                  wrapper.querySelector('[role="alert"]').remove();
+                }, 3000);
+              }
+            }, 1500);
+          };
+        } else {
+          wrapper.innerHTML +=
+            '<div class="alert alert-danger d-inline-block p-2 small" role="alert">Please choose a valid file.</div>';
+          setTimeout(function () {
+            var invalidAlert = wrapper.querySelector('[role="alert"]');
+            if (invalidAlert) {
+              invalidAlert.remove();
+            }
+          }, 3000);
         }
-      }, 3000);
-    }
-  }
-});
-document.addEventListener("change", function (event) {
-  if (event.target.classList.contains("hello-4")) {
-    var triggerInput = event.target;
-    var currentImg = triggerInput.closest(".hello-2").querySelector(".hello-3")
-      .src;
-    var holder = triggerInput.closest(".hello-2");
-    var wrapper = triggerInput.closest(".hello-1");
-
-    var alerts = wrapper.querySelectorAll('[role="alert"]');
-    alerts.forEach(function (alert) {
-      alert.remove();
+      }
     });
-
-    triggerInput.blur();
-    var files = triggerInput.files || [];
-    if (!files.length || !window.FileReader) {
-      return;
-    }
-
-    if (/^image/.test(files[0].type)) {
-      var reader = new FileReader();
-      reader.readAsDataURL(files[0]);
-
-      reader.onloadend = function () {
-        holder.classList.add("uploadInProgress");
-        holder.querySelector(".hello-3").src = this.result;
-
-        var loader = document.createElement("div");
-        loader.classList.add("upload-loader");
-        loader.innerHTML =
-          '<div class="spinner-border text-primary" role="status"><span class="sr-only">Loading...</span></div>';
-        holder.appendChild(loader);
-
-        setTimeout(function () {
-          holder.classList.remove("uploadInProgress");
-          loader.remove();
-
-          var random = Math.random();
-          if (random < 0.9) {
-            wrapper.innerHTML +=
-              '<div class="snackbar show" role="alert"><i class="fa fa-check-circle text-success"></i> Profile image updated successfully</div>';
-            triggerInput.value = "";
-            setTimeout(function () {
-              wrapper.querySelector('[role="alert"]').remove();
-            }, 3000);
-          } else {
-            holder.querySelector(".hello-3").src = currentImg;
-            wrapper.innerHTML +=
-              '<div class="snackbar show" role="alert"><i class="fa fa-times-circle text-danger"></i> There is an error while uploading! Please try again later.</div>';
-            triggerInput.value = "";
-            setTimeout(function () {
-              wrapper.querySelector('[role="alert"]').remove();
-            }, 3000);
-          }
-        }, 1500);
-      };
-    } else {
-      wrapper.innerHTML +=
-        '<div class="alert alert-danger d-inline-block p-2 small" role="alert">Please choose a valid image.</div>';
-      setTimeout(function () {
-        var invalidAlert = wrapper.querySelector('[role="alert"]');
-        if (invalidAlert) {
-          invalidAlert.remove();
-        }
-      }, 3000);
-    }
-  }
-});
-
-
-</script>
+  </script>
 <script>
   function showDatePicker() {
       var datePicker = document.getElementById("EnterENDDate");

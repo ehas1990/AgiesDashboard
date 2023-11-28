@@ -7,6 +7,7 @@
     max-height: 33px;
     width: auto;
 }
+
 .dataTables_filter , #example1_paginate
 {
    
@@ -271,4 +272,43 @@
 {
   width: 20%;
   border-radius: 100%;
+}
+
+@media only screen 
+  and (min-device-width: 210px) 
+  and (max-device-width:320px)
+{
+  #table-profilePic {
+    width: 68%;
+    border-radius: 100%;
+}
+ }
+ @media only screen 
+ and (min-device-width: 320px) 
+ and (max-device-width:480px)
+{
+ #table-profilePic {
+   width: 68%;
+   border-radius: 100%;
+}
+}
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 620px)
+{
+  #table-profilePic {
+    width: 68%;
+    border-radius: 100%;
+}
+}
+@media only screen 
+  and (min-device-width:620px) 
+  and (max-device-width:720px)
+{
+  
+}
+@media only screen 
+ and (max-device-width:1024px)
+  {
+   
 }
